@@ -24,10 +24,21 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",              
+              "src/app/custom/datatables/dataTables.bootstrap4.css",
+              "src/app/custom/fontawesome-free/css/all.css",
+              "src/app/custom/dashboad.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./src/app/custom/jquery-easing/jquery.easing.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",  
+              "./src/app/custom/chart.js/Chart.min.js",
+              "./src/app/custom/datatables/jquery.dataTables.js",
+              "./src/app/custom/datatables/dataTables.bootstrap4.min.js",
+              "./src/app/custom/dashboad.js"              
+            ]
           },
           "configurations": {
             "production": {

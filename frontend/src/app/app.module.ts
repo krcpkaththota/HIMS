@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,14 @@ import { PatientSearchComponent } from './components/patient/patient-search/pati
 import { PatientProfileComponent } from './components/patient/patient-profile/patient-profile.component';
 import { PatientExaminationComponent } from './components/patient/patient-examination/patient-examination.component';
 import { PatientComplainsComponent } from './components/patient/patient-complains/patient-complains.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { DoctorDashboadComponent } from './components/dashboads/doctor-dashboad/doctor-dashboad.component';
+import { DashboadNavbarComponent } from './components/navbars/dashboad-navbar/dashboad-navbar.component';
+import { DropdownDirective } from './shared/directives/dropdown.directive';
+import { ConsultantDashboadComponent } from './components/dashboads/consultant-dashboad/consultant-dashboad.component';
+// import { DashboadComponent } from './components/dashboad/dashboad.component';
+// import { DashboadNavarComponent } from './components/navbars/dashboad-navar/dashboad-navar.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +39,21 @@ import { PatientComplainsComponent } from './components/patient/patient-complain
     PatientSearchComponent,
     PatientProfileComponent,
     PatientExaminationComponent,
-    PatientComplainsComponent
+    PatientComplainsComponent,
+    HomeComponent,
+    DoctorDashboadComponent,
+    DashboadNavbarComponent,
+    DropdownDirective,
+    ConsultantDashboadComponent,
+    // DashboadComponent,
+    // DoctorDashboadComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
